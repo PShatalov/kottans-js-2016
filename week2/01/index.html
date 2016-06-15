@@ -77,6 +77,93 @@
                         </label>
                     </fieldset>
                 </section>
+                <section class="upload-section">
+                    <h2 class="header-upload-section">Upload your documents <span class="upload-help">(Doc, Docx, Text, PDF, Markdown)</span></h2>
+                    <button class="upload-file"><i class="fa fa-cloud-upload inline" aria-hidden="true"></i>Upload a new file<input type="file" class="hidden-input"></button>
+                    <fieldset class="upload-table">
+                        <table>
+                            <tr>
+                                <th>File name</th>
+                                <th class="table-collapse-size">File size</th>
+                                <th class="table-collapse-words">Number of words</th>
+                                <th>Remove</th>
+                            <tr>
+                                <td><i class="fa fa-file-text upload-icon" aria-hidden="true"></i>business_operations.docx</td>
+                                <td class="table-collapse-size">78kb</td>
+                                <td value="words:842" class="table-collapse-words">842</td>
+                                <td><button class="delete-file"><i class="fa fa-trash upload-icon" aria-hidden="true"></i></button></td>
+                            <tr>
+                                <td><i class="fa fa-file-text upload-icon" aria-hidden="true"></i>business_financial.docx</td>
+                                <td class="table-collapse-size">26kb</td>
+                                <td value="words:2326" class="table-collapse-words">2,326</td>
+                                <td><button class="upload-delete"><i class="fa fa-trash upload-icon" aria-hidden="true"></i></button></td>
+                        </table>
+                    </fieldset>
+                </section>
+                <section class="select-language">
+                    <h2 class="header-upload-section">Choose your languages pairs</h2>
+                    <div class="from-language">
+                        <label class="from-language-label">From
+                            <select class="select-list">
+                                <option>English</option>
+                                <option>German</option>
+                                <option>Francais</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="to-language">
+                        <label class="to-language-label">To
+                            <select class="select-list">
+                                <option>English</option>
+                                <option>German</option>
+                                <option>Francais</option>
+                            </select>
+                        </label>
+                        <label class="from-language-label additional-language">
+                            <select class="select-list">
+                                <option>English</option>
+                                <option>German</option>
+                                <option>Francais</option>
+                            </select>
+                            <button class="delete-language"><i class="fa fa-trash upload-icon" aria-hidden="true"></i></button>
+                        </label>
+                        <button class="add-language"><i class="fa fa-plus upload-icon" aria-hidden="true"></i> add</button>
+                    </div>
+                </section>
+                <section class="double-section">
+                    <section class="select-tone-section">
+                        <h2 class="header-upload-section sub-header">Select your desired tone</h2>
+                        <fieldset class="tone-feild">
+                            <label class="select-tone">
+                                <input required hidden type="radio" name="tone" value="casual"/>
+                                <div class="tone-wrapper"><i class="fa fa-comments-o upload-icon" aria-hidden="true"></i>Friendly / Casual</div>
+                            </label>
+                            <label class="select-tone">
+                                <input required hidden checked type="radio" name="tone" value="corporate"/>
+                                <div class="tone-wrapper"><i class="fa fa-suitcase upload-icon" aria-hidden="true"></i></i>Corporate / Pro</div>
+                            </label>
+                            <label class="select-tone">
+                                <input required hidden type="radio" name="tone" value="media"/>
+                                <div class="tone-wrapper"><i class="fa fa-newspaper-o upload-icon" aria-hidden="true"></i></i>Media / Format</div>
+                            </label>
+                        </fieldset>
+                    </section>
+                    <section class="urgent">
+                        <h2 class="header-upload-section sub-header">Tell us how urgent this job is</h2>
+                        <div class="urgent-wrapper">
+                            <input required type="range" name="urgent" class="urgent urgent-input position0" min="0" max="100" step="25" value="50"/>
+                            <div class="urgent-label-wrapper">
+                                <label class="range-label range-first-label">I got time</label>
+                                <label class="range-label range-second-label actived">Average</label>
+                                <label class="range-label range-third-label">Yesterday</label>
+                            </div>
+                            <legend for="urgent" class="urgent-hint">
+                                <h3 class="urgent-hint-header">Timeline Info</h3>
+                                <p class="urgent-hint-text">With an <em class="emphesized-hint">avarage</em> timeline setup, our expert translator can take a reasonable amount of time perfecting your translating</p>
+                            </legend>
+                        </div>
+                    </section>
+                </section>
             </form>
         </main>
     </div>
